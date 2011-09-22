@@ -1,0 +1,140 @@
+body {
+	margin-top: 50px;
+	font-family: "helvetica", sans-serif, serif, arial;
+	text-align: center;
+	background: #f9f9f9;
+	color: #000;
+}
+footer {
+	width: 100%;
+	color: #8d8d8d;
+	position:absolute;
+	bottom: 0;
+	background: #f1f1f1;
+}
+form {
+	padding-top: 60px;
+	text-align:center;
+	padding: 0 0 0 0;
+}
+input {
+	width: 100%;
+	height: 50px;
+	font-size: 30px;
+	color: #c1c1c1;
+	border: 5px solid #f1f1f1;
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+ul {
+	list-style: none;
+	margin: 0 0 0 -40px;
+}
+li {
+	padding: 0 20px 0 20px;
+}
+
+a {
+	position: relative;
+	color: grey;
+	text-decoration: none;
+}
+a:hover {
+	color: black;
+}
+p {
+margin: 0 0 0 0;
+}
+h1 {
+	margin: 0 0 0 0;
+}
+
+div.layout {
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: center;
+}
+
+div.title {
+	background: url('images/logo1.png') no-repeat;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 50px;
+	color: #aeaeae;
+}
+
+.title h1 {
+	float: left;
+	text-align: left;
+	display: block;
+}
+a.add {
+	background: -webkit-gradient(linear, left top, left bottom, from(#b5ed98), to(#11b143)) #b5ed98;
+	color: #fff;
+	float: right;
+	width: 40px;
+	height: 40px;
+	top: 10px;
+	right: 10px;
+	padding: 0 0 0 0;
+	text-decoration: none;
+/*	box-shadow: 2px 3px 5px #b4b4b4;*/
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.add span {
+	text-shadow: 0 3px 5px #5e5e5e;
+	font-weight: bold;
+	font-size: 30px;
+}
+.topic-title {
+	text-align: left;
+	font-weight: bold;
+}
+p.topic-title { 
+	margin: 0 0 5px 0;
+}
+
+.information {
+	text-align: left;
+}
+
+.information-last {
+	text-align: left;
+}
+
+p.information-last {
+	margin: 0 0 0 0;
+}
+
+.topix {
+	margin-right: auto;
+	margin-left: auto;
+}
+.topic ul li {
+	padding: 10px;
+	background: #f1f1f1;
+	margin: 0 0 15px 0;
+	border: 1px solid #f1f1f1;
+	-webkit-border-top: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.topic h3 {
+	color: #c1c1c1;
+	margin-left: 20px;
+	text-align: left;
+}
+.cpanel {
+
+}
+
