@@ -8,3 +8,5 @@ tmp/cache/persistent/*
 # Ignore Mac system files
 .Ds_Store
 /nbproject/
+/.DS_Store
+/config/.DS_Store

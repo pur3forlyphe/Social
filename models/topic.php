@@ -26,5 +26,12 @@ class Topic extends AppModel {
                 )
             )
         );
-       // var $actsAs = array('Containable');
+        var $actsAs = array(
+            'Voteable' => array(
+                'parentid' => 'id',
+                'model' => 'Topic',
+                ''
+            )
+            
+            );
 }
