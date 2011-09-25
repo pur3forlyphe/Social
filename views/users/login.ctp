@@ -1,6 +1,8 @@
 
-<div class="title">
-    <span class="add"><?php echo $this->Html->link(__('create account', true), array('controller' => 'users', 'action' => 'register'), array('class' => 'add user')); ?></span>
+<div class="menu-bar">
+    <div class="add">
+        <?php echo $this->Html->link(__('<span class="register">create account</span>', true), array('controller' => 'users', 'action' => 'register'), array('escape' => false)); ?>
+    </div>
 </div>
 <div class="users-login">
     

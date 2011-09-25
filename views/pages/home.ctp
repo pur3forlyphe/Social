@@ -1,6 +1,8 @@
 <div class="layout">
-	<div class="title">				
-		<span class="add"><?php echo $this->Html->link(__('+', true), array('controller' => 'topics', 'action' => 'add'), array('class' => 'add')); ?></span>
+	<div class="menu-bar">				
+		<div class="add">
+                    <?php echo $this->Html->link(__('<span class="post">+</span>', true), array('controller' => 'topics', 'action' => 'add'), array('escape' => false)); ?>
+                </div>
 	</div>
 	
 	<div class="cpanel">			
