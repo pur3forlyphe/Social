@@ -10,3 +10,9 @@ tmp/cache/persistent/*
 /nbproject/
 /.DS_Store
 /config/.DS_Store
+/nbproject/private/config.properties
+/nbproject/private/private.properties
+/nbproject/private/private.xml
+/nbproject/private/private.xml.0.nblh~
+/nbproject/project.properties
+/nbproject/project.xml
