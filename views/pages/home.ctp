@@ -16,16 +16,21 @@
                 ?>
 	</form>
 		<div class="topic">
-                    <ul>
-                            <?php foreach ($topics as $topic): ?>
-				<li>
-                                       <?php echo $this->Html->link(__('vote', true ), array('controller' => 'vote', 'action' => 'vote')); ?>
-                                       <?php echo $this->Html->link('<p class="topic-title">'.__($topic['Topic']['title'], true).'</p>', array('controller' => 'topics', 'action' => 'view', $topic['Topic']['id']), array('escape' => false), false); ?>
+            <ul>
+                    <?php foreach ($topics as $topic): ?>
+				 <li>				
+				 		
+					<div class="mini-icons">
+                      <div class="icon vote"> <?php echo $this->Html->link(__(' ', true ), array('controller' => 'vote', 'action' => 'vote'), array('escape' => false)); ?> </div>
+					</div>
+                        
+                    <div class="topic-title"><?php echo $this->Html->link(__($topic['Topic']['title'], true).'</p>', array('controller' => 'topics', 'action' => 'view', $topic['Topic']['id']), array('escape' => false), false); ?> </div>
 					<p class="information"> 
 						<?php echo $topic['Topic']['description']; ?>
-					</p>	
+					</p>
+					
 				</li>
-                           <?php endforeach; ?>
+                   <?php endforeach; ?>
 			</ul>
 		</div>
 	

@@ -1,9 +1,12 @@
+/* @override http://whatif/css/style.css */
+
 body {
 	margin-top: 50px;
 	font-family: "helvetica", sans-serif, serif, arial;
 	text-align: center;
 	background: #f9f9f9;
 	color: #000;
+	font-size: 16px;
 }
 /* Header */
 header {
@@ -200,7 +203,6 @@ div.layout {
 }
 
 div.menu-bar {
-	background: url('images/logo1.png') no-repeat;
 	display: block;
 	height: 35px;
 	margin-left: auto;
@@ -256,9 +258,8 @@ div.menu-bar {
 .topic-title {
 	text-align: left;
 	font-weight: bold;
-}
-p.topic-title { 
 	margin: 0 0 5px 0;
+	
 }
 
 .information {
@@ -293,6 +294,36 @@ p.information-last {
 }
 .cpanel {
 
+}
+
+/*
+ 	Icons
+	Icons held in sprites
+ */
+
+/* Mini Icons */
+
+.mini-icons {
+	position: relative;
+	height: 6px;
+	left: 45%;
+}
+
+.mini-icons .icon {
+	background: url(../img/icons/mini/mini_icons.png);
+	width: 27px;
+	height: 26px;
+	margin: 10px auto;
+}
+.mini-icons .icon a {
+	display: block;
+	width: 27px;
+	height: 26px;
+}
+.mini-icons .icon.vote {
+	display: block;
+	background-position: 0 0;
+	
 }
 
 
