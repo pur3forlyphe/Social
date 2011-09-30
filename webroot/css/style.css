@@ -1,10 +1,32 @@
+/* @override http://whatif/css/style.css */
+
 body {
 	margin-top: 50px;
 	font-family: "helvetica", sans-serif, serif, arial;
 	text-align: center;
 	background: #f9f9f9;
 	color: #000;
+	font-size: 16px;
 }
+/* Header */
+header {
+	position: absolute;
+	top: 10px;
+	background-color: #f1f1f1;
+	width: 100%;
+	height: 25px;
+}
+a.button{
+	padding: 3px;
+}
+header a {
+	float: right;
+	padding: 0 10px 0 10px;
+	width: 50px;
+	height: 30px;
+	right: 40px;
+}
+
 footer {
 	width: 100%;
 	color: #8d8d8d;
@@ -12,6 +34,28 @@ footer {
 	bottom: 0;
 	background: #f1f1f1;
 }
+
+#content{
+	margin: 0 2% 0 2%;
+}
+
+#logo {
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 50px;
+	width: 176px;
+	height: 70px;
+	background: url(../img/social_logo.png) #f1f1f1;
+	background-repeat: no-repeat;
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
 /* forms */
 form {
 	padding-top: 60px;
@@ -31,17 +75,22 @@ input {
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
+fieldset{
+	margin: 0;
+}
 
 .submit input {
 	width: 150px;
-	background: -webkit-gradient(linear, left top, left bottom, from(#b5ed98), to(#11b143)) #b5ed98;
-	background-color: #3eec00;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b5ed98), to(#11b143)) #bde4ed;
+	background-color: #1087b1;
 	color: #ffffff;
 	font-weight: bold;
 	text-shadow: 0 3px 5px #5e5e5e;
 }
 input.blue {
-	background: -webkit-gradient(linear, left top, left bottom, from(#00b0ec), to(#1087b1)) #bde4ed;
+	background: #00b0ec; /* Old browsers */
+	background: -moz-linear-gradient(top, #00b0ec 0%, #1087b1 100%); /* FF3.6+ */
+	background: -webkit-linear-gradient(top, #00b0ec 0%,#1087b1 100%); /* Chrome10+,Safari5.1+ */
 }
 
 ul {
@@ -59,9 +108,11 @@ a {
 a:hover {
 	color: black;
 }
+
 p {
 margin: 0 0 0 0;
 }
+
 h1 {
 	margin: 0 0 0 0;
 }
@@ -151,12 +202,11 @@ div.layout {
 	text-align: center;
 }
 
-div.title {
-	background: url('images/logo1.png') no-repeat;
+div.menu-bar {
 	display: block;
+	height: 35px;
 	margin-left: auto;
 	margin-right: auto;
-	height: 50px;
 	color: #aeaeae;
 }
 
@@ -165,17 +215,20 @@ div.title {
 	text-align: left;
 	display: block;
 }
-a.add {
-	background: -webkit-gradient(linear, left top, left bottom, from(#b5ed98), to(#11b143)) #b5ed98;
+.add {
+	margin: 0 0 0 0;
+	text-shadow: 0 3px 5px #5e5e5e;
+	font-weight: bold;
+	font-size: 30px;
+	background: #b5ed98; /* Old browsers */
+	background: -moz-linear-gradient(top, #b5ed98 0%, #11b143 98%); /* FF3.6+ */
+	background: -webkit-linear-gradient(top, #b5ed98 0%,#11b143 98%); /* Chrome10+,Safari5.1+ */
+	border: none;
 	color: #fff;
 	float: right;
-	width: 40px;
-	height: 40px;
-	top: 10px;
-	right: 10px;
+	height: 35px;
 	padding: 0 0 0 0;
 	text-decoration: none;
-/*	box-shadow: 2px 3px 5px #b4b4b4;*/
 	-webkit-border-top-left-radius: 10px;
 	-webkit-border-top-right-radius: 10px;
 	-moz-border-radius-topleft: 10px;
@@ -184,28 +237,29 @@ a.add {
 	border-top-right-radius: 10px;
 }
 
-.add .user {
-    font-size: 20px;
-    padding: 0 10px 0 10px;
-    display:block;
-    width: inherit;
+.add a:hover {
+	color: #fff;
+	text-shadow: none;
 }
 
-span.add {
-	text-shadow: 0 3px 5px #5e5e5e;
-	font-weight: bold;
-	font-size: 30px;
+.add a span	{
+	color: #fff;
 }
 
-span.add .user {
-        display: block;
+.add a span.post {
+	display: block;
+	width:35px;
 }
+.add a span.register {
+	display: block;
+	width: 230px;
+}
+
 .topic-title {
 	text-align: left;
 	font-weight: bold;
-}
-p.topic-title { 
 	margin: 0 0 5px 0;
+	
 }
 
 .information {
@@ -241,23 +295,35 @@ p.information-last {
 .cpanel {
 
 }
-/* Header */
-header {
-	position: absolute;
-	top: 10px;
-	background-color: #f1f1f1;
-	width: 100%;
-	height: 25px;
+
+/*
+ 	Icons
+	Icons held in sprites
+ */
+
+/* Mini Icons */
+
+.mini-icons {
+	position: relative;
+	height: 6px;
+	left: 45%;
 }
-a.button{
-	padding: 3px;
+
+.mini-icons .icon {
+	background: url(../img/icons/mini/mini_icons.png);
+	width: 27px;
+	height: 26px;
+	margin: 10px auto;
 }
-header a {
-	float: right;
-	padding: 0 10px 0 10px;
-	width: 50px;
-	height: 30px;
-	right: 40px;
+.mini-icons .icon a {
+	display: block;
+	width: 27px;
+	height: 26px;
+}
+.mini-icons .icon.vote {
+	display: block;
+	background-position: 0 0;
+	
 }
 
 

@@ -3,7 +3,6 @@
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php __('WhatIf'); ?>
 		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
@@ -32,9 +31,7 @@
         }
       ?>
 </header>
-<h1>
-    WhatIf
-</h1>
+    <div id="logo"></div>
 	<div id="content">
 
 		<?php echo $this->Session->flash(); ?>
